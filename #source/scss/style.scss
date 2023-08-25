@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+// ШРИФТЫ
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: local('Gotham Rounded Light'), local('Gotham-Rounded-Light'),
+        url('/fonts/GothamRnd-Light.woff2') format('woff2'),
+        url('/fonts/GothamRnd-Light.woff') format('woff'),
+        url('/fonts/GothamRnd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gotham Rounded';
+    src: local('Gotham Rounded Medium'), local('Gotham-Rounded-Medium'),
+        url('/fonts/GothamRnd-Medium.woff2') format('woff2'),
+        url('/fonts/GothamRnd-Medium.woff') format('woff'),
+        url('/fonts/GothamRnd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gotham Rounded';
+    src: local('Gotham Rounded Bold'), local('Gotham-Rounded-Bold'),
+        url('/fonts/GothamRnd-Bold.woff2') format('woff2'),
+        url('/fonts/GothamRnd-Bold.woff') format('woff'),
+        url('/fonts/GothamRnd-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+// HEADER + INTRO
+@import "intro.scss";
