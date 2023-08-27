@@ -36,11 +36,12 @@
     
     @media (max-width:767px) {
         .nav {
-            max-width: none;
-            font-size: 14px;
-            margin-right: 10px;
-            display: flex;
-            justify-content: center;
+            display: none;
+        }
+    } 
+    @media (max-width:575px) {
+        .nav {
+            display: none;
         }
     } 
 
@@ -99,26 +100,7 @@
         color: #ffffff;
     }
 
-    @media (max-width:1200px) {
-        .intro__title {
-            max-width: 970px;
-            font-size: 36px;
-        }
-    }
-    
-    @media (max-width:992px) {
-        .intro__title {
-            max-width: 750px;
-            font-size: 26px;
-        }
-    }
-    
-    @media (max-width:767px) {
-        .intro__title {
-            max-width: none;
-            font-size: 26px;
-        }
-    } 
+
 
     .intro__subtitle {
         font-family: 'Gotham Rounded';
@@ -142,6 +124,50 @@
         text-decoration: none;
         background-color: #16a085;
     }
+
+    @media (max-width:1200px) {
+        .intro__title {
+            widows: 100%;
+            margin: 0 auto;
+            max-width: 970px;
+            font-size: 36px;
+        }
+    }
+    
+    @media (max-width:992px) {
+        .intro__title {
+            max-width: 750px;
+            font-size: 26px;
+        }
+
+        .intro__subtitle{
+            font-size: 14px;
+        }
+    }
+    
+    @media (max-width:767px) {
+        .intro__title {
+            max-width: none;
+            font-size: 26px;
+        }
+
+        .intro__subtitle{
+            font-size: 14px;
+        }
+    } 
+    @media (max-width:575px) {
+        .intro__title {
+            font-size: 16px;
+        }
+
+        .intro__subtitle{
+            font-size: 10px;
+        }
+
+        .btnin{
+            padding: 10px 20px;
+        }
+    } 
 }
 
 .logos {

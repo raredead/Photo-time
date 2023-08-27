@@ -83,15 +83,12 @@ body {
 }
 @media (max-width: 767px) {
   .header .nav {
-    max-width: none;
-    font-size: 14px;
-    margin-right: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .header .nav {
+    display: none;
   }
 }
 .header .nav:hover {
@@ -149,24 +146,6 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media (max-width: 1200px) {
-  .intro .intro__title {
-    max-width: 970px;
-    font-size: 36px;
-  }
-}
-@media (max-width: 992px) {
-  .intro .intro__title {
-    max-width: 750px;
-    font-size: 26px;
-  }
-}
-@media (max-width: 767px) {
-  .intro .intro__title {
-    max-width: none;
-    font-size: 26px;
-  }
-}
 .intro .intro__subtitle {
   font-family: "Gotham Rounded";
   font-size: 16px;
@@ -187,6 +166,43 @@ body {
   color: #ffffff;
   text-decoration: none;
   background-color: #16a085;
+}
+@media (max-width: 1200px) {
+  .intro .intro__title {
+    widows: 100%;
+    margin: 0 auto;
+    max-width: 970px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 992px) {
+  .intro .intro__title {
+    max-width: 750px;
+    font-size: 26px;
+  }
+  .intro .intro__subtitle {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .intro .intro__title {
+    max-width: none;
+    font-size: 26px;
+  }
+  .intro .intro__subtitle {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575px) {
+  .intro .intro__title {
+    font-size: 16px;
+  }
+  .intro .intro__subtitle {
+    font-size: 10px;
+  }
+  .intro .btnin {
+    padding: 10px 20px;
+  }
 }
 
 .logos {
