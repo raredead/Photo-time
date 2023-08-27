@@ -1,0 +1,105 @@
+.simplephoto {
+    background-color: #f5f6f7;
+    // overflow: hidden;
+
+    .simplephoto__main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1080px;
+        margin: 0 auto;
+
+        .spt {
+            max-width: 40%;
+        }
+
+        .simplephoto__title {
+            font-family: 'Gotham Rounded';
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #16a085;
+
+            margin-bottom: 50px;
+            padding-top: 113px;
+        }
+
+        .simplephoto__txt {
+            font-family: 'Gotham Rounded';
+            font-size: 12px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #373737;
+
+            padding-bottom: 47px;
+        }
+
+        .sp {
+            font-family: 'Gotham Rounded';
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+
+            background-color: #16a085;
+            padding: 20px 40px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5%;
+            margin-bottom: 90px;
+        }
+
+        .sp:hover {
+            background-color: #0c5f4e;
+            transition: .3s linear;
+        }
+
+        .simplephoto__img {
+
+            position: relative;
+
+            .simplephoto__elem {
+
+                position: absolute;
+
+                left: -650px;
+                top: 150px;
+                bottom: 0;
+                z-index: 1;
+            }
+        }
+
+
+
+        @media (max-width:1200px) {
+            .spt {
+                padding: 0 15px;
+            }
+        }
+
+        @media (max-width:992px) {
+            .simplephoto__img {
+                display: none;
+            }
+
+            .spt {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .simplephoto__title {
+                margin-bottom: 30px;
+                padding-top: 70px;
+            }
+        }
+
+        @media (max-width:767px) {
+            .spt {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
