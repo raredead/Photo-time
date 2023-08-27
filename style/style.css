@@ -219,6 +219,7 @@ body {
 
 .simplephoto {
   background-color: #f5f6f7;
+  overflow: hidden;
 }
 .simplephoto .simplephoto__main {
   display: -webkit-box;
@@ -231,6 +232,7 @@ body {
           justify-content: space-between;
   max-width: 1080px;
   margin: 0 auto;
+  position: relative;
 }
 .simplephoto .simplephoto__main .spt {
   max-width: 40%;
@@ -253,7 +255,7 @@ body {
   color: #373737;
   padding-bottom: 47px;
 }
-.simplephoto .simplephoto__main .sp {
+.simplephoto .simplephoto__main .sp__button {
   font-family: "Gotham Rounded";
   font-size: 12px;
   line-height: 20px;
@@ -267,20 +269,16 @@ body {
   border-radius: 5%;
   margin-bottom: 90px;
 }
-.simplephoto .simplephoto__main .sp:hover {
+.simplephoto .simplephoto__main .sp__button:hover {
   background-color: #0c5f4e;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
-.simplephoto .simplephoto__main .simplephoto__img {
-  position: relative;
-}
 .simplephoto .simplephoto__main .simplephoto__img .simplephoto__elem {
   position: absolute;
-  left: -650px;
-  top: 150px;
-  bottom: 0;
-  z-index: 1;
+  left: 450px;
+  top: 130px;
+  z-index: 3;
 }
 @media (max-width: 1200px) {
   .simplephoto .simplephoto__main .spt {
@@ -299,10 +297,113 @@ body {
     margin-bottom: 30px;
     padding-top: 70px;
   }
+  .simplephoto .simplephoto__main .simplephoto__txt {
+    padding: 10px 15px;
+  }
 }
 @media (max-width: 767px) {
   .simplephoto .simplephoto__main .spt {
     max-width: 100%;
     text-align: center;
+  }
+  .simplephoto .simplephoto__main .sp__button {
+    padding: 10px 20px;
+  }
+}
+
+.design {
+  max-width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.design .design__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.design .design__main .design__img {
+  width: 25%;
+  position: relative;
+}
+.design .design__main .design__img2 {
+  position: relative;
+}
+.design .design__main .design__phone {
+  position: absolute;
+  left: 0;
+  top: 130px;
+}
+.design .design__main .design__screen {
+  position: absolute;
+  left: -452px;
+  top: 190px;
+}
+.design .design__main .design__slider {
+  padding-top: 140px;
+  width: 40%;
+}
+.design .design__main .design__title {
+  font-family: "Gotham Rounded";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #16a085;
+}
+.design .design__main .design__txt {
+  font-family: "Gotham Rounded";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: #373737;
+  margin: 45px 0;
+}
+.design .design__main .design__btn {
+  font-family: "Gotham Rounded";
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  margin-bottom: 160px;
+  background-color: #16a085;
+  padding: 20px 45px;
+  outline: none;
+  border: 0;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.design .design__main .design__btn:hover {
+  background-color: #0a473b;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+@media (max-width: 1200px) {
+  .design .design__main .design__slider {
+    padding-top: 90px;
+  }
+  .design .design__main .design__img {
+    display: none;
+  }
+  .design .design__main .design__slider {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  .design .design__main .design__slider {
+    padding-top: 50px;
+  }
+  .design .design__main .design__txt {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 575px) {
+  .design .design__main .design__btn {
+    padding: 10px 20px;
   }
 }
