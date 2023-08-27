@@ -1,6 +1,6 @@
 .simplephoto {
     background-color: #f5f6f7;
-    // overflow: hidden;
+    overflow: hidden;
 
     .simplephoto__main {
         display: flex;
@@ -8,6 +8,7 @@
         justify-content: space-between;
         max-width: 1080px;
         margin: 0 auto;
+        position: relative;
 
         .spt {
             max-width: 40%;
@@ -35,7 +36,7 @@
             padding-bottom: 47px;
         }
 
-        .sp {
+        .sp__button {
             font-family: 'Gotham Rounded';
             font-size: 12px;
             line-height: 20px;
@@ -51,23 +52,21 @@
             margin-bottom: 90px;
         }
 
-        .sp:hover {
+        .sp__button:hover {
             background-color: #0c5f4e;
             transition: .3s linear;
         }
 
         .simplephoto__img {
 
-            position: relative;
 
             .simplephoto__elem {
 
                 position: absolute;
 
-                left: -650px;
-                top: 150px;
-                bottom: 0;
-                z-index: 1;
+                left: 450px;
+                top: 130px;
+                z-index: 3;
             }
         }
 
@@ -93,12 +92,20 @@
                 margin-bottom: 30px;
                 padding-top: 70px;
             }
+
+            .simplephoto__txt{
+                padding: 10px 15px;
+            }
         }
 
         @media (max-width:767px) {
             .spt {
                 max-width: 100%;
                 text-align: center;
+            }
+
+            .sp__button{
+                padding: 10px 20px;
             }
         }
     }
