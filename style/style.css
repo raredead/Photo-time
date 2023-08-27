@@ -216,3 +216,93 @@ body {
 .logos .logosel {
   padding-right: 16px;
 }
+
+.simplephoto {
+  background-color: #f5f6f7;
+}
+.simplephoto .simplephoto__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.simplephoto .simplephoto__main .spt {
+  max-width: 40%;
+}
+.simplephoto .simplephoto__main .simplephoto__title {
+  font-family: "Gotham Rounded";
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #16a085;
+  margin-bottom: 50px;
+  padding-top: 113px;
+}
+.simplephoto .simplephoto__main .simplephoto__txt {
+  font-family: "Gotham Rounded";
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #373737;
+  padding-bottom: 47px;
+}
+.simplephoto .simplephoto__main .sp {
+  font-family: "Gotham Rounded";
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #16a085;
+  padding: 20px 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5%;
+  margin-bottom: 90px;
+}
+.simplephoto .simplephoto__main .sp:hover {
+  background-color: #0c5f4e;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.simplephoto .simplephoto__main .simplephoto__img {
+  position: relative;
+}
+.simplephoto .simplephoto__main .simplephoto__img .simplephoto__elem {
+  position: absolute;
+  left: -650px;
+  top: 150px;
+  bottom: 0;
+  z-index: 1;
+}
+@media (max-width: 1200px) {
+  .simplephoto .simplephoto__main .spt {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 992px) {
+  .simplephoto .simplephoto__main .simplephoto__img {
+    display: none;
+  }
+  .simplephoto .simplephoto__main .spt {
+    max-width: 100%;
+    text-align: center;
+  }
+  .simplephoto .simplephoto__main .simplephoto__title {
+    margin-bottom: 30px;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .simplephoto .simplephoto__main .spt {
+    max-width: 100%;
+    text-align: center;
+  }
+}
