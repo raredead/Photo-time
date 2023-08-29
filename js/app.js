@@ -4,7 +4,7 @@ const body = document.querySelector('body');
 
 menuBtn.addEventListener('click', function(e){
     e.stopPropagation();
-    menu.classList.add('active');
+    menu.classList.toggle('active');
 });
 
 body.addEventListener('click', function(){
