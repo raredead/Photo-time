@@ -49,13 +49,27 @@ body {
   }
 }
 .header {
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  background-color: #2c1f2c;
   width: 100%;
-  top: 40px;
+  height: 10%;
+  top: 0;
   left: 0;
   right: 0;
+  bottom: 10;
   z-index: 1000;
   text-align: center;
+}
+.header .wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .header .nav {
   font-family: "Gotham Rounded";
@@ -65,30 +79,38 @@ body {
   letter-spacing: 0.15em;
   color: #ffffff;
   text-decoration: none;
-  margin-right: 67px;
+  padding: 0 30px;
 }
 @media (max-width: 1200px) {
   .header .nav {
     max-width: 970px;
     font-size: 16px;
-    margin-right: 40px;
+    padding: 0 20px;
   }
 }
 @media (max-width: 992px) {
   .header .nav {
-    max-width: 750px;
     font-size: 14px;
-    margin-right: 20px;
+    padding: 0 20px;
   }
 }
 @media (max-width: 767px) {
-  .header .nav {
-    display: none;
+  .header .menu {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  .header .menu.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @media (max-width: 575px) {
   .header .nav {
-    display: none;
+    font-size: 12px;
   }
 }
 .header .nav:hover {
@@ -96,28 +118,28 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.header .logo {
-  padding-right: 67px;
-}
-@media (max-width: 1200px) {
-  .header .logo {
-    max-width: 970px;
-    font-size: 16px;
-    padding-right: 40px;
-  }
-}
-@media (max-width: 992px) {
-  .header .logo {
-    max-width: 750px;
-    font-size: 14px;
-    padding-right: 20px;
-  }
-}
 @media (max-width: 767px) {
-  .header .logo {
-    max-width: none;
-    font-size: 14px;
-    padding-right: 0;
+  .header .menu__btn {
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .header .menu__btn span {
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+  }
+  .header .menu__btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+  }
+  .header .menu__btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
   }
 }
 
@@ -400,6 +422,9 @@ body {
   }
   .design .design__main .design__txt {
     padding: 0 15px;
+  }
+  .design .design__main .design__btn {
+    padding: 10px 20px;
   }
 }
 @media (max-width: 575px) {
