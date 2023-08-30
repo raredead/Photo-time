@@ -36,8 +36,8 @@ for (let i = 0; i < links.length; i++) {
 // Слайдер для блока Design
 let offset = 0;
 const sliderLine = document.querySelector('.slider-line');
-const itemWidth = 1080;
-
+const itemWidth = document.querySelector('.slider').offsetWidth;
+console.log(itemWidth);
 document.querySelector('.next').addEventListener('click', function () {
     offset += itemWidth;
     if (offset > itemWidth * 4) {
@@ -52,3 +52,4 @@ document.querySelector('.prev').addEventListener('click', function () {
     }
     sliderLine.style.left = -offset + 'px';
 })
+

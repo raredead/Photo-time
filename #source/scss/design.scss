@@ -1,11 +1,45 @@
 .design {
     max-width: 1080px;
     margin: 0 auto;
-    padding-top: 125px;
     position: relative;
+
+    .slider__btn {
+        text-align: right;
+        margin-right: 50px;
+        margin-top: 125px;
+    }
+
+    .prev,
+    .next {
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    @media (max-width:992px) {
+        .slider__btn {
+            text-align: left;
+            padding: 0 0 10px 10px;
+            margin-top: 60px;
+        }
+    }
+
+    @media (max-width:575px) {
+        .slider__btn {
+            margin-top: 30px;
+        }
+    }
 
     .slider {
         overflow: hidden;
+        padding: 0 20px;
+
+        @media (max-width: 575px) {
+            .slider {
+                height: auto;
+            }
+        }
 
         .slider-line {
             display: flex;
@@ -13,14 +47,12 @@
             position: relative;
             left: 0;
             transition: all ease 1s;
+            max-width: 80%;
 
             .slider__elem {
                 min-width: 1080px;
+                padding-right: 15px;
             }
-
-            .design__img {}
-
-            .phone {}
 
             .design__block {
                 max-width: 40%;
@@ -29,6 +61,18 @@
             .slider__elem {
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 50px;
+            }
+
+            @media (max-width: 767px) {
+                .slider__elem {}
+            }
+
+            @media (max-width: 575px) {
+                .slider__elem {
+                    text-align: center;
+                    min-width: 750px;
+                }
             }
 
             .design__title {
@@ -48,6 +92,12 @@
                 color: #373737;
 
                 padding: 45px 0;
+            }
+
+            @media (max-width: 575px) {
+                .design__txt {
+                    font-size: 10px;
+                }
             }
 
             .design__btn {
@@ -80,24 +130,20 @@
                 padding-bottom: 7px;
             }
 
+            @media (max-width:1200px) {
+                .slider-line {}
+            }
+
+            @media (max-width:992px) {
+                .design__img {
+                    display: none;
+                }
+
+                .design__btn {
+                    padding: 10px 20px;
+                }
+            }
 
         }
-    }
-
-    .prev,
-    .next {
-        position: absolute;
-        background-color: transparent;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-    }
-    .prev{
-        top: 450px;
-        left: 650px;
-    }
-    .next{
-        top: 450px;
-        right: 370px;
     }
 }

@@ -344,11 +344,40 @@ body {
 .design {
   max-width: 1080px;
   margin: 0 auto;
-  padding-top: 125px;
   position: relative;
+}
+.design .slider__btn {
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 125px;
+}
+.design .prev,
+.design .next {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .design .slider__btn {
+    text-align: left;
+    padding: 0 0 10px 10px;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 575px) {
+  .design .slider__btn {
+    margin-top: 30px;
+  }
 }
 .design .slider {
   overflow: hidden;
+  padding: 0 20px;
+}
+@media (max-width: 575px) {
+  .design .slider .slider {
+    height: auto;
+  }
 }
 .design .slider .slider-line {
   display: -webkit-box;
@@ -361,9 +390,11 @@ body {
   left: 0;
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
+  max-width: 80%;
 }
 .design .slider .slider-line .slider__elem {
   min-width: 1080px;
+  padding-right: 15px;
 }
 .design .slider .slider-line .design__block {
   max-width: 40%;
@@ -375,6 +406,13 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 50px;
+}
+@media (max-width: 575px) {
+  .design .slider .slider-line .slider__elem {
+    text-align: center;
+    min-width: 750px;
+  }
 }
 .design .slider .slider-line .design__title {
   font-family: "Gotham Rounded";
@@ -391,6 +429,11 @@ body {
   letter-spacing: 0.15em;
   color: #373737;
   padding: 45px 0;
+}
+@media (max-width: 575px) {
+  .design .slider .slider-line .design__txt {
+    font-size: 10px;
+  }
 }
 .design .slider .slider-line .design__btn {
   font-family: "Gotham Rounded";
@@ -419,19 +462,11 @@ body {
   color: #373737;
   padding-bottom: 7px;
 }
-.design .prev,
-.design .next {
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-.design .prev {
-  top: 450px;
-  left: 650px;
-}
-.design .next {
-  top: 450px;
-  right: 370px;
+@media (max-width: 992px) {
+  .design .slider .slider-line .design__img {
+    display: none;
+  }
+  .design .slider .slider-line .design__btn {
+    padding: 10px 20px;
+  }
 }
