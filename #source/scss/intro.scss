@@ -46,7 +46,6 @@
     }
 
     @media (max-width:767px) {
-        .nav {}
 
         .menu {
             transform: translateX(-100%);
@@ -208,6 +207,6 @@
     z-index: 1;
 
     .logosel {
-        padding-right: 16px;
+        padding: 0 10px;
     }
 }
