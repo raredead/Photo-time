@@ -241,7 +241,7 @@ body {
   z-index: 1;
 }
 .logos .logosel {
-  padding-right: 16px;
+  padding: 0 10px;
 }
 
 .simplephoto {
@@ -290,7 +290,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #16a085;
-  padding: 20px 30px;
+  padding: 20px 40px;
   cursor: pointer;
   border: none;
   border-radius: 5%;
@@ -344,99 +344,94 @@ body {
 .design {
   max-width: 1080px;
   margin: 0 auto;
+  padding-top: 125px;
+  position: relative;
+}
+.design .slider {
   overflow: hidden;
 }
-.design .design__main {
+.design .slider .slider-line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  left: 0;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+.design .slider .slider-line .slider__elem {
+  min-width: 1080px;
+}
+.design .slider .slider-line .design__block {
+  max-width: 40%;
+}
+.design .slider .slider-line .slider__elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.design .design__main .design__img {
-  width: 25%;
-  position: relative;
-}
-.design .design__main .design__img2 {
-  position: relative;
-}
-.design .design__main .design__phone {
-  position: absolute;
-  left: 0;
-  top: 130px;
-}
-.design .design__main .design__screen {
-  position: absolute;
-  left: -452px;
-  top: 190px;
-}
-.design .design__main .design__slider {
-  padding-top: 140px;
-  width: 40%;
-}
-.design .design__main .design__title {
+.design .slider .slider-line .design__title {
   font-family: "Gotham Rounded";
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.15em;
   color: #16a085;
 }
-.design .design__main .design__txt {
+.design .slider .slider-line .design__txt {
   font-family: "Gotham Rounded";
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.15em;
   color: #373737;
-  margin: 45px 0;
+  padding: 45px 0;
 }
-.design .design__main .design__btn {
+.design .slider .slider-line .design__btn {
   font-family: "Gotham Rounded";
   font-size: 12px;
-  line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
   color: #ffffff;
-  margin-bottom: 160px;
+  margin-bottom: 45px;
   background-color: #16a085;
-  padding: 20px 30px;
-  outline: none;
-  border: 0;
+  padding: 20px 40px;
+  border: none;
   border-radius: 5%;
   cursor: pointer;
 }
-.design .design__main .design__btn:hover {
-  background-color: #0a473b;
+.design .slider .slider-line .design__btn:hover {
+  background-color: #0d6453;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
-@media (max-width: 1200px) {
-  .design .design__main .design__slider {
-    padding-top: 90px;
-  }
-  .design .design__main .design__img {
-    display: none;
-  }
-  .design .design__main .design__slider {
-    width: 100%;
-    text-align: center;
-  }
+.design .slider .slider-line .count {
+  font-family: "Gotham Rounded";
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #373737;
+  padding-bottom: 7px;
 }
-@media (max-width: 992px) {
-  .design .design__main .design__slider {
-    padding-top: 50px;
-  }
-  .design .design__main .design__txt {
-    padding: 0 15px;
-  }
-  .design .design__main .design__btn {
-    padding: 10px 20px;
-  }
+.design .prev,
+.design .next {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
 }
-@media (max-width: 575px) {
-  .design .design__main .design__btn {
-    padding: 10px 20px;
-  }
+.design .prev {
+  top: 450px;
+  left: 650px;
+}
+.design .next {
+  top: 450px;
+  right: 370px;
 }

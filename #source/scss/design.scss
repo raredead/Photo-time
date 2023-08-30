@@ -1,118 +1,103 @@
 .design {
     max-width: 1080px;
     margin: 0 auto;
-    overflow: hidden;
-    
+    padding-top: 125px;
+    position: relative;
 
-    .design__main {
-        display: flex;
-        max-width: 100%;
-        justify-content: space-between;
+    .slider {
+        overflow: hidden;
 
-        .design__img {
-            width: 25%;
+        .slider-line {
+            display: flex;
+            justify-content: space-between;
             position: relative;
-        }
-
-        .design__img2 {
-            position: relative;
-        }
-
-        .design__phone {
-            position: absolute;
             left: 0;
-            top: 130px;
-        }
+            transition: all ease 1s;
 
-        .design__screen {
-            position: absolute;
-            left: -452px;
-            top: 190px;
-        }
-
-        .design__slider {
-            padding-top: 140px;
-            width: 40%;
-        }
-
-        .design__title {
-            font-family: 'Gotham Rounded';
-            font-size: 18px;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: #16a085;
-        }
-
-        .design__txt {
-            font-family: 'Gotham Rounded';
-            font-size: 12px;
-            font-weight: 400;
-            letter-spacing: .15em;
-            color: #373737;
-            margin: 45px 0;
-        }
-
-        .design__btn {
-            font-family: 'Gotham Rounded';
-            font-size: 12px;
-            line-height: 20px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: .15em;
-            color: #ffffff;
-            margin-bottom: 160px;
-
-            background-color: #16a085;
-            padding: 20px 30px;
-            outline: none;
-            border: 0;
-            border-radius: 5%;
-
-            cursor: pointer;
-        }
-
-        .design__btn:hover {
-            background-color: #0a473b;
-            transition: .3s linear;
-        }
-
-
-        @media (max-width:1200px) {
-            .design__slider {
-                padding-top: 90px;
+            .slider__elem {
+                min-width: 1080px;
             }
 
-            .design__img {
-                display: none;
+            .design__img {}
 
+            .phone {}
+
+            .design__block {
+                max-width: 40%;
             }
 
-            .design__slider {
-                width: 100%;
-                text-align: center;
-                
+            .slider__elem {
+                display: flex;
+                justify-content: space-between;
             }
-        }
 
-        @media (max-width:992px) {
-            .design__slider {
-                padding-top: 50px;
+            .design__title {
+                font-family: 'Gotham Rounded';
+                font-size: 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: .15em;
+                color: #16a085;
             }
-            .design__txt{
-                padding: 0 15px;
+
+            .design__txt {
+                font-family: 'Gotham Rounded';
+                font-size: 12px;
+                font-weight: 400;
+                letter-spacing: .15em;
+                color: #373737;
+
+                padding: 45px 0;
             }
+
             .design__btn {
-                padding: 10px 20px;
-            }
-        }
+                font-family: 'Gotham Rounded';
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #ffffff;
+                margin-bottom: 45px;
 
-        @media (max-width:575px) {
-            .design__btn {
-                padding: 10px 20px;
+                background-color: #16a085;
+                padding: 20px 40px;
+                border: none;
+                border-radius: 5%;
+                cursor: pointer;
             }
-    
+
+            .design__btn:hover {
+                background-color: #0d6453;
+                transition: .3s linear;
+            }
+
+            .count {
+                font-family: 'Gotham Rounded';
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: .15em;
+                color: #373737;
+                padding-bottom: 7px;
+            }
+
+
+        }
     }
 
+    .prev,
+    .next {
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
     }
-
+    .prev{
+        top: 450px;
+        left: 650px;
+    }
+    .next{
+        top: 450px;
+        right: 370px;
+    }
 }
