@@ -547,3 +547,74 @@ body {
     font-size: 12px;
   }
 }
+
+.follow {
+  background: url(../img/bcfoll.jpg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+}
+.follow .follow__title {
+  font-family: "Gotham Rounded";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  padding-bottom: 35px;
+}
+.follow .follow__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.follow .follow__input {
+  width: 280px;
+  padding: 25px;
+  font-family: "Gotham Rounded";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #373737;
+  border-right: none;
+  border: #ffffff;
+  outline: none;
+}
+.follow .follow__btn {
+  background-color: #16a085;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 25px;
+}
+.follow .follow__btn:hover {
+  background-color: #0b473b;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+@media (max-width: 575px) {
+  .follow .follow__title {
+    font-size: 20px;
+  }
+  .follow .follow__input {
+    padding: 15px;
+    width: 220px;
+  }
+}

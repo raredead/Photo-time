@@ -29,7 +29,7 @@ for (let i = 0; i < links.length; i++) {
         e.preventDefault();
 
         const blockId = e.currentTarget.getAttribute('href').substr(1);
-        document.getElementById(blockId).scrollIntoView({ behavior: "smooth", block: "start" })
+        document.getElementById(blockId).scrollIntoView({ behavior: "smooth", block: "center" })
     })
 }
 
