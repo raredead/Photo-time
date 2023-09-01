@@ -618,3 +618,151 @@ body {
     width: 220px;
   }
 }
+
+.download {
+  background-color: #f5f6f7;
+  padding: 90px 0 115px 0;
+}
+.download .download__main {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 845px;
+}
+.download .download__main .download__title {
+  font-family: "Gotham Rounded";
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #373737;
+}
+.download .download__main .download__txt {
+  font-family: "Gotham Rounded";
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #373737;
+  padding: 15px 0 45px 0;
+}
+.download .download__main .button__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.download .download__main .download__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+}
+.download .download__main .download__btn {
+  font-family: "Gotham Rounded";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 17px;
+  background-color: #1abc9c;
+  width: 240px;
+}
+.download .download__main .download__btn:hover {
+  background-color: #16a085;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.download .download__main .download__icon {
+  padding: 16px;
+  color: #ffffff;
+  background-color: #16a085;
+  border-radius: 0px 3px 3px 0px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.download .download__main .download__icon:hover {
+  background-color: #1abc9c;
+  -webkit-transition: 0.3 linear;
+  transition: 0.3 linear;
+}
+@media (max-width: 767px) {
+  .download .download__main .download {
+    padding: 50px 0 100px 0;
+  }
+  .download .download__main .button__block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .download .download__main .download__button {
+    padding: 10px 10px;
+  }
+  .download .download__main .download__title {
+    font-size: 16px;
+  }
+  .download .download__main .download__txt {
+    font-size: 10px;
+    padding: 10px 15px 30px 15px;
+  }
+}
+@media (max-width: 575px) {
+  .download .download__main .download__txt {
+    padding: 10px 15px 15px 15px;
+  }
+}
+
+.footer {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.footer .footer__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px 0 45px 0;
+}
+.footer .footer__main .footer__title {
+  font-family: "Gotham Rounded";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #373737;
+  text-decoration: none;
+}
+.footer .footer__main .footer__title:not(:last-child)::after {
+  content: "";
+  border-right: 2px solid #16a085;
+  padding-right: 5px;
+}
+.footer .footer__main .footer__title:hover {
+  color: #16a085;
+}
+.footer .footer__main .footer__subtitls {
+  font-family: "Gotham Rounded";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #373737;
+  padding-top: 25px;
+}
+@media (max-width: 767px) {
+  .footer .footer__main .footer__text {
+    padding: 0 15px;
+  }
+  .footer .footer__main .footer__icon {
+    padding: 0 15px;
+  }
+}
