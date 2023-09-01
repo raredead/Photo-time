@@ -37,7 +37,7 @@ for (let i = 0; i < links.length; i++) {
 let offset = 0;
 const sliderLine = document.querySelector('.slider-line');
 const itemWidth = document.querySelector('.slider').offsetWidth;
-console.log(itemWidth);
+
 document.querySelector('.next').addEventListener('click', function () {
     offset += itemWidth;
     if (offset > itemWidth * 4) {
@@ -53,3 +53,19 @@ document.querySelector('.prev').addEventListener('click', function () {
     sliderLine.style.left = -offset + 'px';
 })
 
+// Проверка поля ввода Email блока Follow
+const mainForm = document.forms.main;
+const mainFormInput = mainForm.nameImput;
+console.log(mainFormInput);
+
+mainForm.addEventListener("submit", (e) => {
+    if(emailTest(mainFormInput)){
+        alert("Введите Email");
+    }
+    mainFormInput.value = '';
+    e.preventDefault();
+});
+
+function emailTest(input) {
+    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+}
