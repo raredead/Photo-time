@@ -596,6 +596,11 @@ body {
   border: #ffffff;
   outline: none;
 }
+.follow .follow__error {
+  font-family: "Gotham Rounded";
+  font-size: 16px;
+  color: red;
+}
 .follow .follow__btn {
   background-color: #16a085;
   outline: none;
