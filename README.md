@@ -1,5 +1,5 @@
 <h1 align="center">Photo-time</h1>
- <h1 align="center">https://raredead.github.io/</h1>
+ <h1 align="center">[https://raredead.github.io/](https://raredead.github.io/Photo-time/)</h1>
 
 <p>В проекте представленна верстка лендинга, для демонстрации моих навыков в технологиях, которые применяются в работе.</p>
 
